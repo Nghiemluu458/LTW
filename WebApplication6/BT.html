@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ĐĂNG KÝ TÀI KHOẢN NGÂN HÀNG</title>
+</head>
+<body>
+    <form id="AccRegister" runal="sever" style="width:600px; height:1000px">
+        <h1>ĐĂNG KÝ TÀI KHOẢN NGÂN HÀNG</h1>
+        <fieldset legend="Thông tin cá nhân">
+            <h2>Thông tin cá nhân</h2>
+            <table>
+                <tr>
+                    <th width="30%">Họ tên: </th>
+                    <td width="70%">
+                        <input type="text" id="name" name="name" maxlenghth="50" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ngày sinh: </th>
+                    <td>
+                        <input type="date" id="bday" name="bday" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Giới Tính: </th>
+                    <td>
+                        <select id="sex" name="sex">
+                            <option id="male">Male</option>
+                            <option id="female">Female</option>
+                            <option id="undefined">Undefined</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Địa chỉ: </th>
+                    <td>
+                        <input type="text" id="adress" name="adress" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Số đt: </th>
+                    <td>
+                        <input type="number" id="phone number" name="phone number" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email: </th>
+                    <td>
+                        <input type="text" id="email" name="email" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset legend="Thông tin thu nhập">
+            <h2>Thông tin thu nhập</h2>
+            <table>
+                <tr>
+                    <th>Nghề Nghiệp: </th>
+                    <td>
+                        <select id="career" name="career">
+                            <option id="student">Student</option>
+                            <option id="officer">Officer</option>
+                            <option id="manager">Manager</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Thu nhập: </th>
+                    <td>
+                        <input type="radio" id="lt10m" name="lt10m" /> &lt;&nbsp;10 tr <br />
+                        <input type="radio" id="bt1020" name="bt1020" /> &lt;&nbsp;Từ 10 tr đến 20tr <br />
+                        <input type="radio" id="lt10m" name="gt20m" /> &lt;&nbsp;20 tr <br />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <button id="Register" value=" Đăng ký" type="submit" style=" width:100px; height:30px">Đăng ký</button>
+        <button id="Unregister" value=" Huỷ đăng ký" type="reset" style=" width:100px; height:30px">Huỷ đăng ký</button>
+    </form>
+</body>
+</html>
